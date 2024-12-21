@@ -1,5 +1,6 @@
 package com.bigocode.hotel_management.entity;
 
+import com.bigocode.hotel_management.dto.BookingsDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +22,7 @@ public class Room {
     private String roomPrice;
     private String roomPhotoUrl;
     private String roomDescription;
-    private List<Booking> bookings = new ArrayList<>();
+    private List<BookingsDTO> bookings = new ArrayList<>();
 
     @Override
     public String toString() {
